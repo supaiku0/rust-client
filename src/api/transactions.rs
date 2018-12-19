@@ -107,10 +107,9 @@ impl Transactions {
     ///
     /// # use serde_json::to_string_pretty;
     /// # use arkecosystem_client::connection::Connection;
-    /// # use arkecosystem_client::api::two::Two;
     ///
     /// # fn main() {
-    ///   # let client = Connection::<Two>::new("http://167.114.43.38:4003/api/");
+    ///   # let client = Connection::new("http://167.114.43.38:4003/api/");
     ///   let fees = client.transactions.fees().unwrap();
     ///   println!("{}", to_string_pretty(&fees).unwrap());
     /// # }
